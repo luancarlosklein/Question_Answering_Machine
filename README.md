@@ -8,10 +8,11 @@ Files:
 
 <br>- main.py: The main code, that executes all
 <br>- train.py: The code that trains a model (important: this process take a long time)
-===============================
+<br> --------------------------------------------------------
+
 <br>To make the predictions, use the main.py. The output of this must be a json file.
 <br>The evaluation (calculate F1-score) is done inside the main.py calling the utils/evaluate-v2.0.py
-<br>===============================
+<br> --------------------------------------------------------
 
 <br>Using docker:
 <br>docker build -t QAmachine/1.0 .
