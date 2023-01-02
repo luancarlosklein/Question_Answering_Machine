@@ -15,5 +15,5 @@ Files:
 <br> --------------------------------------------------------
 
 <br>Using docker:
-<br>docker build -t QAmachine/1.0 .
-<br>docker run PYTHONUNBUFFERED=1 -d QAmachine/1.0
+<br>docker build -t qamachine/1.0 .
+<br>docker run PYTHONUNBUFFERED=1 -d qamachine/1.0
