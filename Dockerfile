@@ -6,6 +6,7 @@ WORKDIR /usr/app
 # Adds the relevant files
 COPY utils /usr/app/utils
 COPY data /usr/app/data
+COPY models /usr/app/models
 COPY predictions /usr/app/predictions
 COPY main.py /usr/app/
 COPY requirements.txt /usr/app/
@@ -15,4 +16,4 @@ RUN pip install --no-cache-dir --upgrade pip && \
     pip install -r requirements.txt
 
 # Run the code
-CMD ["python3", "main.py"]
+CMD ["python", "-u", "main.py"]
