@@ -14,10 +14,11 @@ Files:
 <br>The evaluation (calculate F1-score) is also done inside the main.py calling the utils/evaluate-v2.0.py
 <br> --------------------------------------------------------
 
-<br>Dockerfiles:
+### Dockerfiles:
 <br>The first dockerfile named "Dockerfile" executes just the evaluation script with the predictions already generated.
 <br>docker build -t qamachine:1.0 .
 <br>docker run PYTHONUNBUFFERED=1 -d qamachine:1.0
+
 <br>The second dockerfile named "Dockerfile-generate" executes the main code, which generates all the predictions, and the evaluation in sequence.
 <br>docker build -f Dockerfile-generate -t qamachine-generate:1.0 .
 <br>docker run PYTHONUNBUFFERED=1 -d qamachine-generate:1.0
