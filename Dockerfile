@@ -6,7 +6,7 @@ WORKDIR /usr/app
 # Adds the relevant files
 COPY utils /usr/app/utils
 COPY data /usr/app/data
-COPY models /usr/app/models
+#COPY models /usr/app/models
 COPY predictions /usr/app/predictions
 COPY main.py /usr/app/
 COPY requirements.txt /usr/app/
