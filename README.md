@@ -21,4 +21,4 @@ Files:
 
 <br>The second dockerfile named "Dockerfile-generate" executes the main code, which generates all the predictions, and the evaluation in sequence.
 <br>docker build -f Dockerfile-generate -t qamachine-generate:1.0 .
-<br>docker run PYTHONUNBUFFERED=1 -d qamachine-generate:1.0
+<br>docker run qamachine-generate:1.0
