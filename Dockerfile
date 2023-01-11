@@ -1,6 +1,8 @@
 # Pulls python image from dockerhub
 FROM python:3.9
 
+ENV PYTHONUNBUFFERED 1
+
 WORKDIR /usr/app
 
 # Adds the relevant files
@@ -8,7 +10,7 @@ COPY utils /usr/app/utils
 COPY data /usr/app/data
 #COPY models /usr/app/models
 COPY predictions /usr/app/predictions
-COPY main.py /usr/app/
+#COPY main.py /usr/app/
 COPY requirements.txt /usr/app/
 
 ## Install libs

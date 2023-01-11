@@ -1,6 +1,8 @@
 # Pulls python image from dockerhub
 FROM python:3.9
 
+ENV PYTHONUNBUFFERED 1
+
 WORKDIR /usr/app
 
 # Adds the relevant files
