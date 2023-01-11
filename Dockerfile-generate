@@ -16,4 +16,4 @@ RUN pip install --no-cache-dir --upgrade pip && \
     pip install -r requirements.txt
 
 # Run the code
-CMD ["python", "-u", "utils/evaluate-v2.0.py", "data/dev-v2.0.json", "predictions/preds_deberta-v3-large-squad2.json"]
+CMD ["python", "-u", "main.py"]

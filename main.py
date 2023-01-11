@@ -9,10 +9,10 @@ def QA(model_name):
     pretrained_model = model_name
     print(f"Loading: {pretrained_model}")
     ## Define the tokenizer, which depends the model selected
-    tokenizer = AutoTokenizer.from_pretrained("models/"+pretrained_model)
+    tokenizer = AutoTokenizer.from_pretrained("deepset/"+pretrained_model)
 
     ## Define the model
-    model = AutoModelForQuestionAnswering.from_pretrained("models/"+pretrained_model)
+    model = AutoModelForQuestionAnswering.from_pretrained("deepset/"+pretrained_model)
     print(f"Loading finished: {pretrained_model}")
     ## Function that recive a question and a text
     ## Return the anwser for the question based on the context
